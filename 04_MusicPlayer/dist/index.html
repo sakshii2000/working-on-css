@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="style.css" />
+    <title>Music Player</title>
+  </head>
+
+  <!-- [&::-webkit-slider-thumb]:appearance-none
+  [text-shadow:0.5px_0.5px_1px_#E5E7EB]-->
+  <body
+    class="bg-slate-800 mx-auto flex justify-center h-screen items-center bg-[url('./assets/bg.jpg')]">
+    <div
+      class="flex flex-col items-center bg-[#121826a6] p-6 w-[21rem] backdrop-blur-2xl rounded-2xl">
+      <img
+        class="rounded-2xl"
+        src="./assets/cover-1.png"
+        alt="" />
+      <h2 class="text-[#E5E7EB] font-inter pt-3.5">Lost in the City Lights</h2>
+      <p class="text-[#4D5562] font-inter text-xs px-1">Cosmo Sheldrake</p>
+      <div class="container">
+        <input
+          class="w-full h-1 rounded-lg appearance-none outline-none cursor-pointer slider"
+          type="range"
+          value="60"
+          min="0"
+          max="100" />
+      </div>
+      <div class="flex items-center">
+        <img
+          src="./assets/Stop_and_play_fill-1.svg"
+          alt="" />
+        <img
+          src="./assets/Play_fill.svg"
+          alt="" />
+        <img
+          src="./assets/Stop_and_play_fill_reverse.svg"
+          alt="" />
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

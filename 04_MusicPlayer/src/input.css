@@ -1,0 +1,36 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+input[type="range"].slider {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 25px;
+}
+
+input[type="range"].slider::-webkit-slider-runnable-track {
+  height: 5px;
+  background: #e5e7eb;
+  border: none;
+  border-radius: 3px;
+}
+
+input[type="range"].slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  border: none;
+  height: 16px;
+  width: 16px;
+  border-radius: 50%;
+  background: #c93b76;
+  margin-top: -6px;
+}
+
+input[type="range"].slider:focus {
+  outline: none;
+}
+
+input[type="range"].slider:focus::-webkit-slider-runnable-track {
+  background: #c93b76;
+}
