@@ -9,6 +9,7 @@ let cover = document.querySelector(".cover");
 let title = document.querySelector(".title");
 let author = document.querySelector(".author");
 
+let index = 0;
 function formatTime(seconds) {
   const minutes = Math.floor(seconds / 60);
   const remSecs = Math.floor(seconds % 60);
@@ -53,8 +54,10 @@ audio.addEventListener("loadedmetadata", function () {
 });
 
 function playNextSong() {
-  if (audio.ended) {
+  if (audio.ended && index == 0) {
     nextSong();
+  } else {
+    prevSong();
   }
 }
 
@@ -67,6 +70,7 @@ function nextSong() {
   title.innerHTML = "Forest Lullaby";
   author.innerHTML = "Lesfm";
   audio.src = "./assets/forest-lullaby-110624.mp3";
+  index = 1;
   playAudio();
 }
 
@@ -75,5 +79,6 @@ function prevSong() {
   title.innerHTML = "Lost in the City Lights";
   author.innerHTML = "Cosmo Sheldrake";
   audio.src = "./assets/lost-in-city-lights-145038.mp3";
+  index = 0;
   playAudio();
 }
