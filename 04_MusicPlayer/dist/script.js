@@ -48,9 +48,9 @@ function playAudio() {
   });
 }
 
-// audio.addEventListener("loadedmetadata", function () {
-//   sliderMaxValue();
-// });
+audio.addEventListener("loadedmetadata", function () {
+  sliderMaxValue();
+});
 
 function playNextSong() {
   if (audio.ended) {
