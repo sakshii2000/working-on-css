@@ -12,35 +12,54 @@
   </head>
 
   <!-- [&::-webkit-slider-thumb]:appearance-none
-  [text-shadow:0.5px_0.5px_1px_#E5E7EB]-->
+  [text-shadow:0.5px_0.5px_1px_#E5E7EB]
+
+h-1 rounded-lg appearance-none outline-none cursor-pointer slider-->
   <body
     class="bg-slate-800 mx-auto flex justify-center h-screen items-center bg-[url('./assets/bg.jpg')]">
     <div
       class="flex flex-col items-center bg-[#121826a6] p-6 w-[21rem] backdrop-blur-2xl rounded-2xl">
       <img
-        class="rounded-2xl"
+        class="rounded-2xl cover"
         src="./assets/cover-1.png"
         alt="" />
-      <h2 class="text-[#E5E7EB] font-inter pt-3.5">Lost in the City Lights</h2>
-      <p class="text-[#4D5562] font-inter text-xs px-1">Cosmo Sheldrake</p>
-      <div class="container">
-        <input
-          class="w-full h-1 rounded-lg appearance-none outline-none cursor-pointer slider"
-          type="range"
-          value="60"
-          min="0"
-          max="100" />
+      <h2 class="text-[#E5E7EB] font-inter pt-3.5 title">
+        Lost in the City Lights
+      </h2>
+      <p class="text-[#4D5562] font-inter text-xs px-1 author">
+        Cosmo Sheldrake
+      </p>
+
+      <div
+        class="flex mx-auto justify-between w-full text-[#4D5562] mt-5 text-xs mb-1 font-semibold">
+        <div class="start-value">00:00</div>
+        <div class="end-value">03:15</div>
       </div>
-      <div class="flex items-center">
+      <input
+        class="slider w-full h-1 mb-10 rounded-3xl"
+        type="range"
+        value="60"
+        min="0"
+        max="100" />
+      <audio
+        class="audio"
+        src="./assets/lost-in-city-lights-145038.mp3"></audio>
+      <div class="flex items-center justify-center">
         <img
+          class="w-10 mx-2 p-1"
           src="./assets/Stop_and_play_fill-1.svg"
-          alt="" />
+          alt=""
+          onclick="prevSong()" />
         <img
+          class="play w-12 rounded-full bg-[#c93b76] mx-2 p-2 shadow-sm shadow-[#c93b76]"
           src="./assets/Play_fill.svg"
-          alt="" />
+          alt=""
+          onclick="playAudio()" />
         <img
+          class="w-10 mx-2 p-1"
           src="./assets/Stop_and_play_fill_reverse.svg"
-          alt="" />
+          alt=""
+          onclick="nextSong()" />
       </div>
     </div>
 
