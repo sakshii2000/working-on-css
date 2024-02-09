@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="style.css" />
+    <title>Quote Generator</title>
+  </head>
+  <body
+    class="bg-[#111729] font-outfit flex mx-auto justify-center items-center h-screen flex-col">
+    <div
+      class="flex flex-col p-8 bg-[#20293A] rounded-xl items-center relative lg:w-[43%] gap-y-3 overflow-hidden hidden card shadow-lg w-[85%]">
+      <h2 class="text-white text-lg font-medium">Lorem, ipsum dolor.</h2>
+      <div class="flex">
+        <div
+          class="rounded-full border text-xs text-[#6466E9] border-[#6466E9] p-0.5 px-2.5 mx-1.5 tag1">
+          Lorem, ipsum.
+        </div>
+        <div
+          class="rounded-full border text-xs text-[#6466E9] border-[#6466E9] p-0.5 px-2 mx-1.5 tag2">
+          Lorem, ipsum.
+        </div>
+        <div
+          class="rounded-full border text-xs text-[#6466E9] border-[#6466E9] p-0.5 px-2 mx-1.5 tag3">
+          Lorem, ipsum.
+        </div>
+      </div>
+      <h1 class="text-[#97A3B6] text-center text-2xl mt-3 mb-3 relative z-10">
+        "Learn from yesterday, live for today, hope for tomorrow."
+      </h1>
+      <img
+        class="absolute -my-3"
+        src="./assets/bg-image-random-quote.svg"
+        alt="" />
+    </div>
+
+    <div
+      class="flex my-4 border rounded-xl border-[#4A5567] cursor-pointer shadow-md">
+      <img
+        class="p-1.5 border-r border-[#4A5567] px-3 w-14 hover:rounded-l-xl hover:bg-[#97a3b6]"
+        src="./assets/Regroup.svg"
+        alt=""
+        onclick="changeQuote()" />
+      <img
+        class="p-1.5 px-3 w-14 hover:rounded-r-xl hover:bg-[#97a3b6]"
+        src="./assets/link.svg"
+        alt=""
+        onclick="copyToClipboard()" />
+    </div>
+
+    <p class="p-1 px-2.5 bg-[#ffffff80] text-green-800 rounded-lg hidden">
+      Copied to Clipboard
+    </p>
+    <script src="script.js"></script>
+  </body>
+</html>
