@@ -11,3 +11,7 @@ https://sakshii2000.github.io/working-on-css/03_tailwindcssapplication/dist/
 https://sakshii2000.github.io/working-on-css/00_practice/dist/card.html
 
 https://sakshii2000.github.io/working-on-css/04_MusicPlayer/dist/
+
+https://sakshii2000.github.io/working-on-css/05_QuoteGenerator/dist/
+
+
